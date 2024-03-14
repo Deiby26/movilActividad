@@ -22,6 +22,9 @@ class _MainAppState extends State<MainApp> {
   bool? _ischekednum = false;
   bool? _ischekedcarak =false;
 
+  bool? valor1 = false;
+  
+
 
   @override
   Widget build(BuildContext context) {
@@ -50,15 +53,11 @@ class _MainAppState extends State<MainApp> {
               label: _currentSlideValue.toString(),
               onChanged: (double value) {
                 setState(() {
-                  
                   _currentSlideValue = value;
-                  selectedLetter = seleccionarletrasMayus(_currentSlideValue.toInt());   
-                    
+                  selectedLetter = seleccionarletrasMayus(_currentSlideValue.toInt());      
                 });
-              },
-              
+              },            
             ),
-            
             Text(selectedLetter),
             CheckboxListTile(
               title: const Text("Mayusculas: "),
@@ -66,6 +65,9 @@ class _MainAppState extends State<MainApp> {
               onChanged: (bool? newValue){
                 setState(() {
                   _isCheked = newValue;
+                  valor1 = _isCheked;
+
+
                 });
               }              
               ),
@@ -96,7 +98,9 @@ class _MainAppState extends State<MainApp> {
                   _ischekedcarak = newvalue4;
                 });
               }
-              )
+              ),
+              Text(valor1.toString())
+
             
           ],
         ),

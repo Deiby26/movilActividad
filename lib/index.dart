@@ -1,14 +1,13 @@
 import 'dart:math';
+import 'main.dart';
 void main(){
-
-  print("Hola Mundo");
-
-  List<String> abecedario = List.generate(26, (index) => String.fromCharCode('a'.codeUnitAt(0) + index));
-  print(abecedario);
+  
   
 }
+  //List<String> abecedario = List.generate(26, (index) => String.fromCharCode('a'.codeUnitAt(0) + index));
+  //print(abecedario);
 
-void static; String seleccionarletrasMayus(int numero){
+void static; String seleccionarletrasMayus(int numero){ 
   List<String> alphabet = List.generate(26, (int index) => String.fromCharCode('A'.codeUnitAt(0) + index));
   Random random = Random();
   String password = '';
@@ -20,9 +19,4 @@ void static; String seleccionarletrasMayus(int numero){
   return password;
 }
 
-void  seleccionarletrasMinus(int estado){
 
-  List<String> abecedario = List.generate(26, (index) => String.fromCharCode('a'.codeUnitAt(0) + index));
-  print(abecedario);
-
-}
