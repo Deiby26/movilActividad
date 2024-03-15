@@ -1,9 +1,13 @@
 import 'dart:math';
-import 'main.dart';
-void main(){
+//import 'package:flutter/material.dart';
+
+void main() {
   
+  
+ 
   
 }
+
   //List<String> abecedario = List.generate(26, (index) => String.fromCharCode('a'.codeUnitAt(0) + index));
   //print(abecedario);
 
@@ -18,5 +22,4 @@ void static; String seleccionarletrasMayus(int numero){
   }
   return password;
 }
-
 
